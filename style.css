@@ -8,6 +8,7 @@ body {
     text-align: center;
 
     main {
+        position: relative;
 
         h1 {
             font-size: 8vmin;
@@ -45,12 +46,33 @@ body {
         }
         .reset{
             margin-top: 3vh;
-            width: 6vw;
+            width: 8vw;
             height: 6vh;
             background-color: #620647;
             border-radius: 1vmin;
             border: none;
             color: #EBD2BE;
+        }
+
+        .winner{
+            background-color: #620647;
+            position: absolute;
+            top: 25vh;
+            right: 20vw;
+            width: 60vw;
+            height: 30vh;
+            border-radius: 1vw;
+            visibility: hidden;
+            opacity: 0.95;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .prompt{
+                text-align: center;
+                font-size: 6vw;
+                color: #EBD2BE;
+            }
         }
     }
 }
